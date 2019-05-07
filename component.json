@@ -1,0 +1,33 @@
+{
+    "title": "Schema of Azure Storage events published to Azure Event Grid",
+    "description": "Describes the schema of the Azure Storage events published to Azure Event Grid. This corresponds to the Data property of an EventGridEvent.",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/azure.com/eventgrid-Storage/2018-01-01/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://azure.local/",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {}
+}
